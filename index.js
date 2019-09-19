@@ -1,6 +1,9 @@
-function takeANumber (katzDeliLine, newPerson){
-  katzDeliLine.push(newPerson);
-  return ("Welcome, " + newPerson + ". You are number " + katzDeliLine.length + ' in line.');
+let ticketNumber = 73
+
+function takeANumber (katzDeliLine){
+  ticketNumber++; 
+  katzDeliLine.push(ticketNumber);
+  return ("Welcome. You are number " + katzDeliLine.length + " in line." "Your ticket number is " + ticketNumber + "." ); 
 }
 
 function nowServing (katzDeliLine) {
@@ -22,3 +25,4 @@ function currentLine (katzDeliLine){
    }
    return "The line is currently: " + list.join(", ");
 }
+
